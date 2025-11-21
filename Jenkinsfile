@@ -6,8 +6,8 @@ pipeline {
  }
  stages {
  stage('Checkout') {
- steps { git url: 'your-github-repo-url' } // <<< UPDATE THIS LINE
- }
+ steps { git url: 'https://github.com/bsse23071/simple-web.git' }
+}
  stage('Build') {
  steps {
  sh 'docker build -t $IMAGE:$TAG .'
