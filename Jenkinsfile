@@ -5,8 +5,8 @@ pipeline {
  TAG = "1.0-${env.BUILD_NUMBER}"
  }
  stages {
- stage('Checkout') {
- steps { git url: 'https://github.com/bsse23071/simple-web.git' }
+stage('Checkout') {
+ steps { git url: 'https://github.com/bsse23071/simple-web.git', branch: 'main' }
 }
  stage('Build') {
  steps {
